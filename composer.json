@@ -10,6 +10,7 @@
       }
     ],
     "require": {
+        "fzaninotto/faker": "^1.8"
     },
     "require-dev": {
       "phpunit/phpunit": "7.*"
