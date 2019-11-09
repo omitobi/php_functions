@@ -37,13 +37,9 @@ class ExplodeTests extends TestCase
         /**
          * @var string $delimiter
          */
-        $delimiter = $haystack[0];
-
-        var_dump($delimiter, $haystack);
+        $delimiter = $haystack[$this->faker->numberBetween(0, 19)];
 
         $result = explode($delimiter, $haystack);
-
-        var_dump($result);
 
         $this->assertEquals($result, Method::explode($haystack, $delimiter));
     }
